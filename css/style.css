@@ -1,0 +1,49 @@
+header {
+	height: 100px;
+	background-color: #02010A;
+	padding: 0 50px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.logo {
+	text-transform: uppercase;
+	color: #00fff2;
+	font-weight: 200;
+}
+
+.menu a{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	transition: 0.4s;
+}
+
+.mostrar-menu{
+	order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover,
+.submenu-productos a:hover{
+	color: #00fff2;
+}
+
+#check{
+	display: none;
+}

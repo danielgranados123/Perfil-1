@@ -9,7 +9,6 @@ body{
 	font-family: 'Poppins' , sans-serif;
 }
 header {
-	
 	height: 100px;
 	background-color: #02010A;
 	padding: 0 50px;
@@ -25,7 +24,7 @@ header {
 .logo {
 	text-transform: uppercase;
 	color: #00fff2;
-	font-weight: 200;
+	font-weight: 600;
 }
 
 .menu a{
@@ -62,71 +61,32 @@ header {
 .emprendedores{
 	margin: 3%;
 	text-align: justify;
-	font-family: 'Poppins' , sans-serif;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
+.botonEmprendedor{
+    font-family: 'Poppins', sans-serif;
+    background-color: #00fff2;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-style: none;
 }
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
 
-.testimony{
-    background-color: #e5e5f7;
-}
-
-.testimony__container{
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    gap: 1em;
-    align-items: center;
-}
-
-.testimony__body{
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
-}
-
-
-.testimony__body--show{
-    pointer-events: unset;
-    opacity: 1;
-    transition: opacity 1.5s ease-in-out;
-}
-
-.testimony__img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: 00fff2;
-    border-width: 5px;
-    object-fit: cover;
-    object-position: 50% 30%;
-}
-
-.testimony__texts{
-    max-width: 700px;
-}
-
-.testimony__course{
-    background-color: 00fff2;
-    color: #02010A;
-    display: inline-block;
-    padding: 5px;
-}
-
-.testimony__arrow{
-    width: 90%;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.botonEmprendedor:hover {
+    background-color:#00e1d5;
+}
+
+.botonEmprendedor:active {
+    background-color:#02d0c6;
+    transform: translateY(4px);
+}

@@ -58,35 +58,146 @@ header {
 	display: none;
 }
 
-.emprendedores{
+.introduccion{
 	margin: 3%;
 	text-align: justify;
+}
+
+.botonesEm{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .botonEmprendedor{
     font-family: 'Poppins', sans-serif;
     background-color: #00fff2;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border-style: none;
-}
-button {
-    font-size: 1em;
-    padding: 10px 20px;
-    color: white;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-
-    cursor: pointer;
-    transition: all 0.3s ease;
+    margin: 5px;
 }
 
-.botonEmprendedor:hover {
-    background-color:#00e1d5;
+.botonEmprendedor{
+  border: none;
+  position:relative;
+  height: 130%;
+  font-size:130%;
+
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
 }
 
-.botonEmprendedor:active {
-    background-color:#02d0c6;
-    transform: translateY(4px);
+button:hover{
+  background:#fff;
+  color:#00cdc3;
 }
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #00fff2;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+#containerEmpre{
+	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin:  auto;
+	height: 500px;
+	width: 90%;
+}
+
+#containerEmpre.bill {
+    height: 650px;
+}
+
+#containerEmpre.steve {
+    height: 700px;
+}
+
+#containerEmpre.mark {
+    height: 700px;
+}
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 45%;
+
+}
+
+#containerEmpre .product-details h1{
+	display: inline-block;
+	position: relative;
+	color: #344055;
+	margin: 0;
+}
+
+#containerEmpre .product-details > p {
+	text-align: justify;
+	color: black;
+}
+
+.product-image {
+	transition: all 0.3s ease-out;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	width: 50%;
+    float: right;
+}
+
+#containerEmpre img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 3;
+    padding-left: 10%;
+    text-align: left;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}

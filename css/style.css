@@ -144,6 +144,9 @@ button:hover:before,button:hover:after{
 	height: 550px;
 }
 
+#containerEmpre.daniel{
+	height: 500px;
+}
 
 .product-details {
 	position: relative;
